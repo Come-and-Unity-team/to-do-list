@@ -1,0 +1,28 @@
+﻿@model TodoList.Entities.TodoItem
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Add item form</title>
+    <link href="~/StyleSheet.css" rel="stylesheet"/>
+    <link href="~/StyleAddItem.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="content">
+        <h1>Add Todo item</h1>
+        <div class="addForm">
+            @using (Html.BeginForm("AddItem", "Home", FormMethod.Post))
+            {
+                @Html.TextBoxFor(m => m.ItemName, new { placeholder = "Item name" })
+                @Html.TextBoxFor(m => m.ItemDetails, new { placeholder = "Details" })
+                <input type="submit" value="Save" class="addButton" />
+                <div class="cancelButton">
+                    @Html.ActionLink("Cancel", "Index", "Home")
+                </div>
+            }
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

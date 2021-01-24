@@ -1,0 +1,58 @@
+﻿.content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.cancelButton {
+    text-align:center;
+}
+    .cancelButton a {
+        text-decoration: none;
+        font-weight: bold;
+        border: 1px solid #333;
+        display: inline-block;
+        padding: 5px 15px;
+        color: brown;
+        background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+        font-size: 16pt;
+        width: 175pt;
+    }
+.cancelButton a:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    color: crimson;
+    }
+.addForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addForm input {
+    
+    margin: 5px auto;
+    padding: 5px;
+    font-size: 20px;
+    
+    
+}
+.addButton{
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #333;
+    display: inline-block;
+    padding: 5px 15px;
+    color: darkgreen;
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    
+    font-size: 20pt;
+    width: 200pt;
+}
+.addButton:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    color: forestgreen;
+}
+

@@ -1,0 +1,55 @@
+﻿.content {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:70%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size:50px;
+}
+.addItemButton{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    /*text-align: center;*/
+}
+    .addItemButton a {
+        text-decoration: none;
+        border: 1px solid #333;
+        display: inline-block;
+        padding: 5px 15px;
+        color: darkcyan;
+        background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+        font-size: 20pt;
+    }
+.addItemButton a:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    color: darkcyan;
+    }
+.listItems a{
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 20pt;
+    color:black;
+}
+.listItems a:hover{
+    color: blue;
+}
+ol{
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.listItems li {
+    text-align: left;
+    padding: 5px 1px;
+}
+
+
+
+
+

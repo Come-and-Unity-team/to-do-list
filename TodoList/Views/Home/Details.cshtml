@@ -1,0 +1,51 @@
+﻿@using TodoList
+@model TodoList.Entities.TodoItem
+<html>
+<head>
+    <title>Todo details</title>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+    <link href="~/StyleDetails.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="content">
+        <h1>Todo details</h1>
+        <div><strong>Item name: </strong><span>@Model?.ItemName</span></div>
+        <div><strong>Item details: </strong><span>@Model?.ItemDetails</span></div>
+        <div>
+            <strong>Item complete state: </strong>
+
+            @{
+                System.Diagnostics.Debug.Assert(Model != null, nameof(Model) + " != null");
+            }
+            @if (!Model.IsItemComplete)
+            {
+                <span>❌</span>
+            }
+            else
+            {
+                <span>✔️</span>
+            }
+        </div>
+        <div class="operationButtons">
+            @using (Html.BeginForm("CompleteItem", "Home", FormMethod.Post))
+            {
+                <input name="id" value="@Model.ItemId" type="hidden" />
+
+                @if (!Model.IsItemComplete)
+                {
+                    <input type="submit" value="Complete" class="completeButton" />
+                }
+            }
+            @using (Html.BeginForm("DeleteItem", "Home", FormMethod.Post))
+            {
+                <input name="id" value="@Model.ItemId" type="hidden" />
+                <input type="submit" value="Delete Item" class="deleteButton" />
+            }
+        </div>
+        <div class="cancelButton">
+            @Html.ActionLink("Cancel", "Index", "Home")
+        </div>
+    </div>
+
+</body>
+</html>

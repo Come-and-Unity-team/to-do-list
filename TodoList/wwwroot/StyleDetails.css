@@ -1,0 +1,80 @@
+﻿.content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto; 
+}
+.cancelButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*text-align: center;*/
+}
+    .cancelButton a {
+        font-weight: bold;
+        text-decoration: none;
+        border: 1px solid #333;
+        display: inline-block;
+        padding: 5px 15px;
+        color: darkgoldenrod;
+        /*background: linear-gradient(to bottom, #fcfff4, #e9e9ce);*/
+        font-size: 20pt;
+        width: 168px;
+        display: flex;
+        justify-content: center;
+    }
+.cancelButton a:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    color:goldenrod;
+}
+.deleteButton {
+    text-decoration: none;
+    border: 1px solid #333;
+    display: inline-block;
+    padding: 5px 15px;
+    color: brown;
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    font-size: 20pt;
+    width: 200px;
+}
+.deleteButton:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    color: crimson;
+}
+.completeButton {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #333;
+    display: inline-block;
+    padding: 5px 15px;
+    color: darkgreen;
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    font-size: 20pt;
+    width: 200px;
+}
+.completeButton:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    color: forestgreen;
+}
+.operationButtons{
+   display: flex;
+   flex-direction:row;
+   justify-content:center;
+}
+strong {
+
+    font-size: 20pt;
+    /*padding: 5px 15px;*/
+}
+span {
+    font-size: 15pt;
+    color: black;
+    font-weight: bold;
+}
+
